@@ -1,3 +1,16 @@
+import json
+
+def load_tasks():
+    try:
+        with open("tasks.json", "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
+
+def save_tasks(tasks):
+    with open("tasks.json", "w") as file:
+        json.dump(tasks, file, indent=2)
+
 def show_menu():
     print("\n=== To Do List ===")
     print("1. View tasks")
@@ -6,7 +19,7 @@ def show_menu():
     print("4. Exit")
 
 def main():
-    tasks = []
+    tasks = load_tasks()
 
     while True:
         show_menu()
@@ -16,8 +29,10 @@ def main():
             view_tasks(tasks)
         elif choice == "2":
             add_task(tasks)
+            save_tasks(tasks)
         elif choice == "3":
             complete_task(tasks)
+            save_tasks(tasks)
         elif choice == "4":
             print("Goodbye!")
             break
