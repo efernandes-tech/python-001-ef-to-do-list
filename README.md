@@ -1,16 +1,16 @@
 <h1 align="center">
-    <a href="#" alt="Project Name">Project Name</a>
+    <a href="#" alt="Python To-Do List">Python To-Do List</a>
 </h1>
 
 <h3 align="center">
-    Brief description of your project
+    A simple command-line to-do list application with persistent storage
 </h3>
 
 <p align="center">
-    <a href="https://github.com/efernandes-tech/scaffolds/commits/main">
-        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/efernandes-tech/scaffolds" />
+    <a href="https://github.com/efernandes-tech/python-001-ef-to-do-list/commits/main">
+        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/efernandes-tech/python-001-ef-to-do-list" />
     </a>
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/efernandes-tech/scaffolds">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/efernandes-tech/python-001-ef-to-do-list">
     <a href="https://edersonfernandes.com.br">
         <img alt="made by @efernandes-tech" src="https://img.shields.io/badge/Made_by-@efernandes%E2%80%93tech-blue">
     </a>
@@ -18,7 +18,7 @@
 </p>
 
 <h4 align="center">
-    Status: In progress | Finished
+    Status: Finished
 </h4>
 
 <p align="center">
@@ -31,15 +31,16 @@
 
 ## About
 
-Description about your project and what it does.
+A command-line to-do list application built with Python that allows users to manage their tasks efficiently. Tasks are stored in a JSON file for persistence between sessions.
 
 ---
 
 ## Features
 
--   [x] Feature One
--   [x] Feature Two
--   [ ] Feature Three (in progress)
+-   [x] View all tasks
+-   [x] Add new tasks
+-   [x] Mark tasks as completed
+-   [x] Persistent storage using JSON
 
 ---
 
@@ -48,46 +49,36 @@ Description about your project and what it does.
 ### Pre-requisites
 
 Before you begin, you will need to have the following tools installed:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+[Git](https://git-scm.com), [Python 3](https://www.python.org/downloads/).
 
 #### Running the project
 
 ```bash
 # Clone this repository
-git clone https://github.com/efernandes-tech/scaffolds.git
+git clone https://github.com/efernandes-tech/python-001-ef-to-do-list.git
 
 # Access the project folder
-cd scaffolds
+cd python-001-ef-to-do-list
 
-# Install dependencies
-npm install
+# Navigate to backend folder
+cd backend
 
 # Run the application
-npm start
-
-# The server will start at port: 3000 - go to http://localhost:3000
+python to_do_list.py
 ```
 
 ---
 
 ## Tech Stack
 
-**Frontend:**
-
--   [React](https://reactjs.org/)
--   [TypeScript](https://www.typescriptlang.org/)
--   [Tailwind CSS](https://tailwindcss.com/)
-
 **Backend:**
 
--   [Node.js](https://nodejs.org/)
--   [Express](https://expressjs.com/)
--   [MongoDB](https://www.mongodb.com/)
+-   [Python 3](https://www.python.org/)
+-   JSON for data storage
 
 **Tools:**
 
 -   [Visual Studio Code](https://code.visualstudio.com/)
--   [Postman](https://www.postman.com/)
 
 ---
 
