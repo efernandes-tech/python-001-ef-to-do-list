@@ -7,7 +7,8 @@ python greeting.py
 ```
 
 ```cmd
-
+cd ./backend
+python to_do_list.py
 ```
 
 ```cmd
